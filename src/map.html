@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+    <!-- ini -->
+    <!-- Leaflet.js -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <!-- Leaflet.js JavaScript -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <style>
+        /* height */
+        #map {
+            height: 300px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- ini map -->
+    <div id="map"></div>
+
+    <script>
+        // initialize Leaflet map
+        var map = L.map('map').setView([53.466667, -2.233333], 16); // 设置初始中心点和缩放级别
+
+        // add OpenStreetMap tile layer
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // add a marker of Manchester University
+        L.marker([53.466667, -2.233333]).addTo(map)
+            .bindPopup('<b>The University of Manchester</b><br>Manchester, UK')
+            .openPopup();
+
+    </script>
+</body>
+</html>
