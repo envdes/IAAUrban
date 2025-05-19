@@ -4,7 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manchester Climate Action Workshop 2025</title>
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#agenda">Agenda</a></li>
+        <li><a href="#speakers">Speakers</a></li>
+        <li><a href="#registration">Registration</a></li>
+      </ul>
+    </nav>
     <style>
+
+        .navbar {
+          background-color: var(--primary-blue);
+          padding: 0.5rem 1rem;
+          position: sticky;
+          top: 0;
+          z-index: 1000;
+        }
+
+        .nav-list {
+          list-style: none;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          margin: 0;
+          padding: 0;
+        }
+
+        .nav-list li {
+          margin: 0 1rem;
+        }
+
+        .nav-list a {
+          color: white;
+          text-decoration: none;
+          font-weight: 500;
+          padding: 0.5rem;
+        }
+
+        .nav-list a:hover {
+          color: var(--highlight-gold);
+          border-bottom: 2px solid var(--highlight-gold);
+        }
         :root {
           --primary-blue: #1a365d;
           --accent-green: #2d5f2e;
@@ -144,7 +185,7 @@
 
     <div class="container">
 
-        <section class="section">
+        <section class="section" id="about">
           <h2>Urban Climate Resilience Workshop</h2>
           <h2>Wednesday 28th May 2025 | Manchester, UK</h2>
           <ul>
@@ -159,7 +200,7 @@
           </ul>
       </section>
 
-        <section class="section">
+        <section class="section" >
             <h2>Workshop Details</h2>
             <ul>
                 <li>📅 Date: Wednesday 28th May 2025</li>
@@ -168,8 +209,55 @@
             </ul>
         </section>
 
-        <section class="section">
-          <h2>RSVP Registration</h2>
+        <section class="section" id="agenda">
+          <h2>Agenda Highlights</h2>
+          <div class="agenda-grid">
+              <div class="agenda-item">
+                  <h3>Session 1: Climate Priorities</h3>
+                  <p>Speakers' presentation</p>
+              </div>
+              <div class="agenda-item">
+                  <h3>Session 2: Breakout Discussions</h3>
+                  <p>Sector-specific challenges analysis</p>
+              </div>
+              <div class="agenda-item">
+                  <h3>Session 3: Action Planning</h3>
+                  <p>Collaboration roadmap development</p>
+              </div>
+          </div>
+      </section>
+
+      <section class="section" id="speakers">
+          <h2>Speakers</h2>
+          <div class="agenda-item">
+          <h3>Francis Tam</h3>
+              <p>Professor in CUHK</p>
+              <p>Topic: Multi-scale control of heatwave and thermal comfort trends observed in GBA, South China</p>
+          </div>
+          <div class="agenda-item">
+              <h3>Zhonghua Zheng</h3>
+              <p>Lecturer in The University of Manchester</p>
+              <p>Topic: Urban climate modelling</p>
+          </div>
+            <div class="agenda-item">
+                <h3>Joe	Webb</h3>
+                <p>Partner organisation in Station South</p>
+                <p>Topic: Green / active travel</p>
+            </div>
+            <div class="agenda-item">
+                <h3>Yuan Sun</h3>
+                <p>PhD Student in The University of Manchester</p>
+                <p>Topic:  Urban heat characteristics and vulnerability of Greater Manchester (UK) during the record-breaking 2022 heatwave</p>
+            </div>
+            <div class="agenda-item">
+              <h3>Junjie Yu</h3>
+              <p>PhD Student in The University of Manchester</p>
+              <p>Topic: Integration and Execution of Community Land Model Urban (CLMU) in a Containerized Environment</p>
+          </div>
+      </section>
+
+        <section class="section" id="registration">
+          <h2>Registration</h2>
           <iframe
           src="https://docs.google.com/forms/d/e/1FAIpQLSfoP8dHRNIJ7MIFwdzwpTFVA8Ldhfz-KZulkeQ6HihfjVPpXg/viewform?embedded=true"
           height="600"
@@ -178,30 +266,6 @@
         >Loading…</iframe>
       </section>
 
-        <section class="section">
-            <h2>Agenda Highlights</h2>
-            <div class="agenda-grid">
-                <div class="agenda-item">
-                    <h3>Session 1: Climate Priorities</h3>
-                    <p>Speakers' presentation</p>
-                </div>
-                <div class="agenda-item">
-                    <h3>Session 2: Breakout Discussions</h3>
-                    <p>Sector-specific challenges analysis</p>
-                </div>
-                <div class="agenda-item">
-                    <h3>Session 3: Action Planning</h3>
-                    <p>Collaboration roadmap development</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <h2>Speakers</h2>
-            <ul>
-                <li>Pending</li>
-            </ul>
-        </section>
 
         <section class="section">
             <h2>Venue Map</h2>
