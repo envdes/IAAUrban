@@ -7,9 +7,8 @@
     <nav class="navbar">
       <ul class="nav-list">
         <li><a href="#about">About</a></li>
-        <li><a href="#agenda">Agenda</a></li>
         <li><a href="#speakers">Speakers</a></li>
-        <li><a href="#registration">Registration</a></li>
+        <li><a href="#report">Workshop Summary</a></li>
       </ul>
     </nav>
     <style>
@@ -94,13 +93,6 @@
           margin: 2rem 0;
         }
     
-        .agenda-grid {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-          gap: 1.5rem;
-          margin-top: 1.5rem;
-        }
-    
         .map-container {
           height: 300px;
           background: #eee;
@@ -152,10 +144,6 @@
             height: 60px;
           }
     
-          .agenda-grid {
-            grid-template-columns: 1fr;
-          }
-    
           .rsvp-form {
             grid-template-columns: 1fr;
           }
@@ -205,28 +193,32 @@
             <ul>
                 <li>📅 Date: Friday 16th Jan 2026</li>
                 <li>⏰ Time: 10:00 AM -- 13:00 PM (subject to adjustment depending on the number of attendees)</li>
-                <li>📍 Location: The University of Manchester</li>
+                <li>📍 Location: Room 4.04, Simon Building, The University of Manchester</li>
             </ul>
         </section>
 
-        <section class="section" id="registration">
-          <h2>Registration</h2>
-          <iframe
-          src="https://forms.gle/cLMFt5uJUrycsngQ6"
-          height="600"
-          allowfullscreen
-          loading="lazy"
-        >Loading…</iframe>
-      </section>
-
-        <section class="section" id="agenda">
-          <h2>Agenda (Pending)</h2>
-          <div class="agenda-grid">
-          </div>
-      </section>
-
       <section class="section" id="speakers">
-          <h2>Speakers (Pending)</h2>
+          <h2>Speakers</h2>
+          <div class="speaker-item">
+            <h3>Dr Zhonghua Zheng</h3>
+            <p>Co-Lead for Environmental Data Science &amp; AI</p>
+            <p>Topic: Advances in Urban Weather and Climate Modelling</p>
+          </div>
+          <div class="speaker-item">
+            <h3>Prof David Schultz</h3>
+            <p>Professor of Synoptic Meteorology</p>
+            <p>Topic: Weather Research at The University of Manchester</p>
+          </div>
+          <div class="speaker-item">
+            <h3>AWS</h3>
+            <p>Amazon Web Services</p>
+            <p>Topic: AWS cloud computing and collaborative opportunities</p>
+          </div>
+          <div class="speaker-item">
+            <h3>Junjie Yu</h3>
+            <p>Research and Innovation Assistant</p>
+            <p>Topic: Tutorial: Introduction about CLMU-Cloud</p>
+          </div>
       </section>
 
 
@@ -235,6 +227,11 @@
             <div class="map-container">
                 <iframe src="src/map.html" width="1200" height="600" frameborder="0" marginheight="0" marginwidth="0"></iframe>
             </div>
+        </section>
+
+        <section class="section" id="report">
+            <h2>Workshop Report</h2>
+            <iframe src="Urban Weather Intelligence in the Cloud Workshop.pdf" width="100%" height="600px"></iframe>
         </section>
 
     </div>
